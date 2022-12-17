@@ -1,0 +1,470 @@
+/* Using fonts.google.com to import the Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/* colour variables*/
+:root {
+    --white: #EDF0F1;
+    --black: #24252A;
+    --grey: #727375;
+    --darkgrey: #545454;
+    --green: #0088A9;
+} 
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--white);
+    font-family: 'Montserrat', sans-serif; /* use google fonts */
+}
+
+li a {
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;  /* remove underline */
+}
+
+h1, h2, h3, p {
+    padding: 0px 0px 20px 0px;
+}
+
+h2, h3 {
+    color: var(--green);
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* push content to edges so they are evenly spaced */
+    align-items: center;
+    padding: 30px 10%;
+
+}
+
+/* turn into a cursor on hover */
+.logo {
+    cursor: pointer;
+}
+
+/* remove bullets */
+
+.nav_links {
+    list-style: none;
+}
+
+/* set nav links side by side */
+.nav_links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav_links li a:hover {
+    transition: all 0.3s ease 0s; /* https://www.w3schools.com/css/css3_transitions.asp */
+    color: var(--green);
+}
+
+.nav_links li a.active {
+    color: var(--green);
+    border-bottom: 2px solid var(--green);
+    padding-bottom: 3px;
+}
+
+.socials {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.socials i:hover {
+    color: var(--green);
+    transition: all 0.3s ease 0s;
+}
+
+/* space between social icons */
+i {
+    padding: 0 8px;
+}
+
+main {
+    font-size: 15px;
+}
+
+body {
+    background-color: var(--black);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-heading {
+    border-bottom: 2px solid var(--green);
+    padding-bottom: 5px;
+    width: 175px;
+    margin-bottom: 30px;
+}
+
+/* Format containter and child on homepage */
+.welcome-container {
+    display: flex;
+    padding: 30px 20%;
+    position: relative;
+}
+
+.welcome-description {
+    position: absolute;
+    display: block;
+    background-color: var(--green);
+    border-radius: 5px;
+    padding: 0 20px;
+    top: 25%;
+    left: 30%;
+    right: 0;
+    max-width: 500px;
+}
+
+.intro-child {
+    flex: 1;
+    padding: 0 20px;
+}
+
+/* Format size of image on homepage */
+.playing-keyboard {
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+}
+
+/* Format quote */
+.quote {
+    border-radius: 10px;
+    margin-left: auto;
+}
+
+/* Format title for quote */
+.welcome-container h2 {
+    text-align: right;
+    font-style: italic;
+}
+
+.instruments {
+    border-radius: 10px;
+    width: 500px;
+    height: 200px;
+}
+
+.instrument-list li {
+    list-style: inside;
+    font-size: 14px;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+.instrument-list li:last-child {
+    margin-bottom: 20px;
+}
+
+.instrument-description p {
+    padding: 10px;
+}
+
+.page-container {
+    padding: 30px 10%;
+}
+
+/* Formatting for soundcloud embed */
+iframe {
+    width: 100%;
+    height: 200px;
+    padding: 15px 0;
+}
+
+.subscribe {
+    background-color: var(--grey);
+    border-radius: 5px;
+    /* border: 2px solid #F2F2F2; */
+    padding: 20px;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+/* Formatiing for the table of equipment */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 30px 0 50px 0;
+}
+
+td, th {
+    padding: 8px;
+    border: 1px solid var(--grey);
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--green);
+}
+
+td {
+    color: var(--black); 
+}
+
+td a {
+    color: var(--black);
+}
+
+td a:hover {
+    color: var(--green);
+}
+
+tr:nth-child(even) {
+    background-color: var(--white);   
+}
+
+tr:nth-child(odd) {
+    background-color: var(--grey);   
+}
+
+/* Style inputs with type="text" and textareas */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    color: var(--black);
+    border: 1px solid var(--white); /* #ccc */
+    border-radius: 4px;
+    /* box-sizing: border-box; */
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical; /* allow the user to vertically resize the textarea (not horizontally) */
+}
+
+textarea {
+    height: 200px;
+}
+
+/* Style the form submit button */
+input[type="submit"] {
+    background-color: var(--darkgrey);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+ /* Change colour of submit button on hover */
+ input[type="submit"]:hover {
+    background-color: var(--green);
+ }
+
+ /* Add a background colour and padding around the form */
+ .contact-form {
+    border-radius: 5px;
+    background-color: var(--grey);
+    /* border: 2px solid #F2F2F2; */
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 30px;
+ }
+
+ /* Format footer section centrally */
+footer {
+    margin-top: auto;
+    padding: 20px;;
+    background: var(--green);
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--black);
+}
+
+/* Hide checkbox */
+#toggle {
+    display: none;
+}
+
+/* Hide nav menu and socials for mobile view */
+@media screen and (min-width: 1166px) {
+    label i {
+        display: none;
+        color: var(--black);
+    }
+}
+
+@media screen and (max-width: 1166px) {
+    .nodisplay {
+        display: none;
+    } 
+
+/* Hamburger styling */
+.hamburger {
+    position: absolute;
+    top: 6em;
+    right: 5%;
+    margin-left: -2em;
+    margin-top: -60px;
+    width: 2em;
+    height: 45px;
+    z-index: 5;
+  }
+  
+  .hamburger div {
+    position: relative;
+    width: 2em;
+    height: 7px;
+    border-radius: 3px;
+    background-color: var(--white);
+    margin-top: 8px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Nav Styles */
+  .nav {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: var(--black);
+    top: -100%; left: 0; right: 0; bottom: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0);
+    z-index: 1;
+  }
+  .nav-wrapper {
+    position: relative;
+    overflow: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+  nav {
+    text-align: center;
+    /* margin-left: 25%; */
+    max-width: 15px;
+
+  }
+  nav a {
+    position: relative;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 2em;
+    display: inline-block;
+    margin-top: 1.25em;
+    transition: color 0.2s ease-in-out;
+    letter-spacing: 1px;
+  }
+  nav a:before {
+    content: '';
+    height: 0;
+    position: absolute;
+    width: 0.25em;
+    background-color: white;
+    left: -0.5em;
+    transition: all 0.2s ease-in-out;
+  }
+  nav a:hover {
+    color: white;
+  }
+  nav a:hover:before {
+    height: 100%;
+  }
+  
+  /* Animations */
+  #toggle:checked + .hamburger .top-bun {
+    transform: rotate(-45deg);
+    margin-top: 25px;
+  }
+  #toggle:checked + .hamburger .bottom-bun {
+    opacity: 0;
+    transform: rotate(45deg);
+  }
+  #toggle:checked + .hamburger .meat {
+    transform: rotate(45deg);
+    margin-top: -7px;
+  }
+  
+  #toggle:checked + .hamburger + .nav {
+    top: 0;
+    transform: scale(1);
+  }
+
+}
+
+/* Smaller image and welcome message */
+@media screen and (max-width: 667px) {
+    .img-keyboard img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .welcome-description {
+        top: 20%;
+        width: 300px;
+        height: 350px;
+    }
+    
+    .welcome-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+/* Smaller quote */
+@media screen and (max-width: 1550px) {
+    .img-quote img {
+        width: 500px;
+        height: 350px;
+    }
+}
+
+/* Smaller quote heading and image */
+@media screen and (max-width: 670px) {
+    .img-quote h2 {
+        margin-top: 50px;
+        position: absolute;
+    }
+
+    .img-quote img {
+        margin-top: 50px;
+        width: 350px;
+        height: 350px;
+    }
+
+}
+
+/* Smaller studio heading and images */
+@media screen and (max-width: 730px) {
+    /* .img-quote h2 {
+        margin-top: 50px;
+        position: absolute;
+    } */
+
+    .img-studio img {
+        /* margin-top: 50px; */
+        width: 200px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 1111px) {
+    table {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1111px) {
+    .img-table {
+        display: none;
+        margin: auto;
+    }
+}
+
+/* Ensure the ratio of the image is not loss when resizing */
+.img-table {
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IROBMUSIC - Music</title>
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+
+    <!-- Use font awesome for social icons -->
+    <script src="https://kit.fontawesome.com/4cda66d231.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Header section for navigation bar, search and social icons -->
+    <header>
+        <a href="./index.html"><img class="logo" src="./images/irob-logo.png" alt="Music Logo" id="logo"></a>
+
+        <!-- Hamburger icon -->
+        <input id="toggle" type="checkbox"></input>
+        <label for="toggle" class="hamburger">
+            <!-- <div class="top-bun"></div>
+            <div class="meat"></div>
+            <div class="bottom-bun"></div> -->
+            <i class="fa-solid fa-bars"></i>
+        </label>   
+
+        <!-- Navigation menu -->
+        <div class="nav">
+            <div class="nav-wrapper">
+                <nav>
+                    <ul class="nav_links">
+                        <li><a href="./index.html">HOME</a></li>
+                        <li><a href="./about.html">ABOUT</a></li>
+                        <li><a href="./music.html" class="active">MUSIC</a></li>
+                        <li><a href="./studio.html">STUDIO</a></li>
+                        <li><a href="./contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="socials nodisplay" id="socials">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-soundcloud"></i></a>
+        </div>
+    </header>
+
+    <!-- Main section -->
+    <main>
+        <div class="page-container">
+            <h1 class="menu-heading">Music</h1>
+            <h2>LISTEN TO MY PROJECTS</h2>
+            
+            <!-- Sound Cloud Music -->
+            <iframe scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/219301709&color=%230088a9&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <iframe scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/219301650&color=%230088a9&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <iframe scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/765943738&color=%230088a9&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <iframe scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/220495084&color=%230088a9&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <iframe scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/223948656&color=%230088a9&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+
+            <!-- Subscribe Form -->
+            <h2>SUBSCRIBE FOR MORE INFO</h2>
+            </div>
+            <div class="subscribe">
+                <form>
+                    <label for="fname">Your Name</label>
+                    <input type="text" id="fname" name="fname" placeholder="Name">
+
+                    <label for="email">Your Email</label>
+                    <input type="text" id="email" name="email" placeholder="Email Address">
+                    <p>What information do you want to receive?</p>
+                    
+                    <input type="radio" id="musicdownloads" name="music" value="musicdownloads">
+                    <label for="category">Music Downloads</label>
+                    
+                    <p>
+                        <input type="radio" id="musictips" name="music" value="musictips">
+                        <label for="category">Music Tips</label>
+                    </p>
+                    
+                    <p><em>We respect your privacy. Unsubscribe at any time</em></p>
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
+    </main>
+    
+    <!-- Footer section for offical declaration -->
+    <footer>
+        <div>Website by <a href="./index.html">Ian Roberts</a></div>
+    </footer>
+</body>
+</html>
